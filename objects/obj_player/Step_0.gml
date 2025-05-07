@@ -15,13 +15,11 @@ velv += grav;
 
 if(_chao && _jump){
 	velv = -vel_jump;
-
 }
 
 if(velh != 0){
 		sprite_index = spr_player_running;
 		image_xscale = sign(velh);
-} else {
+} else if(velh == 0 && !_left && !_right){
 			sprite_index = spr_player_idle;
-		//image_xscale = sign(velh);
 }

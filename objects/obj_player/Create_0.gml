@@ -2,7 +2,7 @@ velh = 0;
 velv = 0;
 vel = 5;
 vel_jump = 8;
-grav = .3;
+grav = .25;
 
 inputs = {
 	top: ord("W"),
