@@ -11,7 +11,10 @@
     "name":"Tutorial",
     "path":"folders/Objetos/Tutorial.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_tecla",
+    "path":"objects/obj_tecla/obj_tecla.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
