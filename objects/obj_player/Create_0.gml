@@ -10,4 +10,5 @@ inputs = {
 	right: ord("D"),
 	bottom: ord("S"),
 	jump: vk_space,
+	enter: vk_enter
 }

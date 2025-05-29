@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_alavanca",
+  "%Name":"obj_caixa_disparadora",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_alavanca",
+  "name":"obj_caixa_disparadora",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interagivel",
-    "path":"objects/obj_interagivel/obj_interagivel.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_alavanca_inicial",
-    "path":"sprites/spr_alavanca_inicial/spr_alavanca_inicial.yy",
+    "name":"Sprite24",
+    "path":"sprites/Sprite24/Sprite24.yy",
   },
   "spriteMaskId":null,
   "visible":true,

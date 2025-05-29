@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_alavanca",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_porta",
+  "eventList":[],
   "managed":true,
-  "name":"obj_alavanca",
+  "name":"obj_porta",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interagivel",
-    "path":"objects/obj_interagivel/obj_interagivel.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_alavanca_inicial",
-    "path":"sprites/spr_alavanca_inicial/spr_alavanca_inicial.yy",
+    "name":"spr_porta_fechada",
+    "path":"sprites/spr_porta_fechada/spr_porta_fechada.yy",
   },
   "spriteMaskId":null,
   "visible":true,
