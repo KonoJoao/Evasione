@@ -25,4 +25,6 @@ if(_col){
 	
 	velv = 0;
 }
+
+
 y += velv;
