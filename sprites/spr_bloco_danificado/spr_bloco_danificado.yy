@@ -24,10 +24,6 @@
   "name":"spr_bloco_danificado",
   "nineSlice":null,
   "origin":0,
-  "parent":{
-    "name":"Bloco",
-    "path":"folders/Sprites/Bloco.yy",
-  },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
