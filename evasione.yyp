@@ -74,6 +74,7 @@
     {"id":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"rm_principal","path":"rooms/rm_principal/rm_principal.yy",},},
     {"id":{"name":"rm_puzzle_senha","path":"rooms/rm_puzzle_senha/rm_puzzle_senha.yy",},},
     {"id":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"id":{"name":"chao","path":"sprites/chao/chao.yy",},},
@@ -123,9 +124,10 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_puzzle_senha","path":"rooms/rm_puzzle_senha/rm_puzzle_senha.yy",},},
+    {"roomId":{"name":"rm_principal","path":"rooms/rm_principal/rm_principal.yy",},},
+    {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
-    {"roomId":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
