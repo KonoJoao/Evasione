@@ -14,6 +14,7 @@ var _right = keyboard_check(inputs.right);
 var _top = keyboard_check(inputs.top);
 var _bottom = keyboard_check(inputs.bottom);
 var _jump = keyboard_check_pressed(inputs.jump);
+var _chao = place_meeting(x, y+1, obj_chao);
 
 if (!is_dead) {
     // Movimento horizontal

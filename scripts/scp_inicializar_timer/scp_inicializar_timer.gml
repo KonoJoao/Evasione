@@ -1,0 +1,2 @@
+/// @function inicializar_timer()
+
