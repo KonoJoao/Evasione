@@ -24,6 +24,10 @@
   "name":"spr_bloco_danificado",
   "nineSlice":null,
   "origin":0,
+  "parent":{
+    "name":"evasione",
+    "path":"evasione.yyp",
+  },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
