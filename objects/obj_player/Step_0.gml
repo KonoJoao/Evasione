@@ -16,7 +16,16 @@ var _bottom = keyboard_check(inputs.bottom);
 var _jump = keyboard_check_pressed(inputs.jump);
 var _chao = place_meeting(x, y+1, obj_chao);
 
-if (!is_dead) {
+// Verificar se o input de senha está ativo
+var password_input_active = false;
+if (instance_exists(obj_password_input)) {
+    var password_obj = instance_find(obj_password_input, 0);
+    if (password_obj != noone && password_obj.input_active) {
+        password_input_active = true;
+    }
+}
+
+if (!is_dead && !password_input_active) {
     // Movimento horizontal
     velh = (_right - _left) * vel;
     
@@ -70,6 +79,11 @@ if (!is_dead) {
     // Coletar pergaminho
     var pergaminho = instance_place(x, y, obj_pergaminho);
     if (pergaminho != noone && !pergaminho.collected) {
+        // Adicionar ao inventário
+        var inv = instance_find(obj_inventory, 0);
+        if (inv != noone) {
+            inv.add_item("pergaminho", spr_pergaminho, 1);
+        }
         has_scroll = true;
         pergaminho.collected = true;
     }
@@ -77,6 +91,11 @@ if (!is_dead) {
     // Coletar chave
     var chave = instance_place(x, y, obj_chave);
     if (chave != noone && !chave.collected) {
+        // Adicionar ao inventário
+        var inv = instance_find(obj_inventory, 0);
+        if (inv != noone) {
+            inv.add_item("chave", spr_chave, 1);
+        }
         has_key = true;
         chave.collected = true;
     }
@@ -86,10 +105,19 @@ if (keyboard_check_pressed(inputs.enter)) {
 
     if (porta != noone) {
         if (has_key) {
-            if (room == rm_game) {
-                room_goto(rm_puzzle_senha);
-            } else {
-                room_goto(rm_menu);
+            // Garantir que o objeto de input de senha existe
+            if (!instance_exists(obj_password_input)) {
+                instance_create_layer(0, 0, "Player", obj_password_input);
+            }
+            
+            // Ativar o sistema de input de senha
+            var password_obj = instance_find(obj_password_input, 0);
+            if (password_obj != noone) {
+                password_obj.input_active = true;
+                password_obj.password_visible = true;
+                password_obj.password_input = "";
+                password_obj.feedback_message = "";
+                password_obj.feedback_timer = 0;
             }
         } 
     }
@@ -128,6 +156,19 @@ if (is_dead) {
         sprite_index = spr_player_idle;
         has_key = false;
         has_scroll = false;
+        
+        // Limpar inventário
+        if (instance_exists(obj_inventory)) {
+            var inv = instance_find(obj_inventory, 0);
+            if (inv != noone) {
+                for (var i = 0; i < inv.max_slots; i++) {
+                    inv.inventory_items[i].item_type = "empty";
+                    inv.inventory_items[i].sprite = noone;
+                    inv.inventory_items[i].quantity = 0;
+                    global.global_inventory[i] = inv.inventory_items[i];
+                }
+            }
+        }
         
         with (obj_chave) {
             collected = false;

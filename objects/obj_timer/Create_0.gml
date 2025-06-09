@@ -2,6 +2,10 @@ minutos = 3
 segundos = 0
 milisegundos = 0
 
+if (!variable_global_exists("dificuldade")) {
+    global.dificuldade = "medio";
+}
+
 switch(global.dificuldade) {
     case "facil":
         minutos = 3;

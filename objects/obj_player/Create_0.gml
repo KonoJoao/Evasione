@@ -28,6 +28,6 @@ inputs = {
 
 // Câmera
 if (view_enabled) {
-    view_set_camera(0, camera_create_view(0, 0, 1024, 768));
-    camera_set_view_size(view_camera[0], 1024, 768);
+    view_set_camera(0, camera_create_view(0, 0, 1920, 1080));
+    camera_set_view_size(view_camera[0], 1920, 1080);
 }
