@@ -53,7 +53,7 @@ if (input_active) {
         } else {
             draw_set_colour(c_red);
         }
-        draw_text_transformed(input_x, box_y + box_h - 30, feedback_message, 1.1, 1.1, 0);
+        draw_text_transformed(input_x, box_y + box_h - 20, feedback_message, 1.1, 1.1, 0);
     }
     
     draw_set_halign(fa_left);
