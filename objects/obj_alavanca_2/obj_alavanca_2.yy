@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_projetil",
+  "%Name":"obj_alavanca_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_projetil",
+  "name":"obj_alavanca_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Atirador",
-    "path":"folders/Objetos/Atirador.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interagivel",
+    "path":"objects/obj_interagivel/obj_interagivel.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_projetil",
-    "path":"sprites/spr_projetil/spr_projetil.yy",
+    "name":"spr_alavanca_inicial",
+    "path":"sprites/spr_alavanca_inicial/spr_alavanca_inicial.yy",
   },
   "spriteMaskId":null,
   "visible":true,

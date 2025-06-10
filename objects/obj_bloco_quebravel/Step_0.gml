@@ -1,5 +1,5 @@
 var player = instance_nearest(x, y, obj_player); // substitua "obj_player" pelo nome real
-var dist_max = 96;
+var dist_max = 64;
 
 if (instance_exists(player)) {
     var dist = point_distance(x, y, player.x, player.y);

@@ -9,10 +9,13 @@
   "name":"obj_torreta",
   "overriddenProperties":[],
   "parent":{
-    "name":"atirador",
-    "path":"folders/Objetos/atirador.yy",
+    "name":"Atirador",
+    "path":"folders/Objetos/Atirador.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_chao",
+    "path":"objects/obj_chao/obj_chao.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

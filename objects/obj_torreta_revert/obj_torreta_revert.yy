@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_projetil",
+  "%Name":"obj_torreta_revert",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_projetil",
+  "name":"obj_torreta_revert",
   "overriddenProperties":[],
   "parent":{
     "name":"Atirador",
     "path":"folders/Objetos/Atirador.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_chao",
+    "path":"objects/obj_chao/obj_chao.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_projetil",
-    "path":"sprites/spr_projetil/spr_projetil.yy",
+    "name":"spr_atirador",
+    "path":"sprites/spr_atirador/spr_atirador.yy",
   },
   "spriteMaskId":null,
   "visible":true,
