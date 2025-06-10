@@ -1,10 +1,15 @@
-// Move o projétil para a esquerda
-x += velocidade;
+// Verifica colisão com o player
+if (instance_exists(obj_player)) {
+    if (collision_line(x, y, x + lengthdir_x(speed, direction), y + lengthdir_y(speed, direction), obj_player, false, true)) {
+        game_end(); // Fecha o jogo
+    }
+}
 
-// Atualiza a distância percorrida
-distancia_percorrida += velocidade;
+// Move o projétil
+x += lengthdir_x(speed, direction);
+y += lengthdir_y(speed, direction);
 
-// Verifica se atingiu a distância máxima
-if (distancia_percorrida >= distancia_maxima) {
-    instance_destroy(); // Destroi o projétil
+// Destroi o projétil se sair da room
+if (x < 0 || x > room_width || y < 0 || y > room_height) {
+    instance_destroy();
 }

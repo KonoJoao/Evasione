@@ -1,6 +1,2 @@
-// Velocidade do projétil
-velocidade = 10;
-// Distância máxima que pode percorrer
-distancia_maxima = 500;
-// Distância percorrida
-distancia_percorrida = 0;
+speed = 6;         // Velocidade do projétil
+direction = 0;     // Direção do disparo (0 = direita)

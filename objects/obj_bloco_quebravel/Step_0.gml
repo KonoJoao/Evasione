@@ -1,19 +1,17 @@
-// Verifica colisão com jogador
-jogador_colidindo = instance_exists(obj_player) && place_meeting(x, y, obj_player);
+var player = instance_nearest(x, y, obj_player); // substitua "obj_player" pelo nome real
+var dist_max = 96;
 
-// Quebra apenas enquanto Enter estiver pressionado
-if (jogador_colidindo && keyboard_check(vk_enter)) {
-    vida_atual = max(0, vida_atual - 2); // Reduz 2% por frame
-    
-    // Atualiza sprite conforme dano
-    if (vida_atual < 30) {
-        sprite_index = spr_bloco_quase_quebrado;
-    } else if (vida_atual < 70) {
-        sprite_index = spr_bloco_danificado;
-    }
-    
-    // Destrói quando vida chegar a zero
-    if (vida_atual <= 0) {
-        instance_destroy();
+if (instance_exists(player)) {
+    var dist = point_distance(x, y, player.x, player.y);
+
+    if (dist <= dist_max) {
+        if (keyboard_check(vk_enter)) {
+            progress += 1.5; // ajustável
+
+            if (progress >= progress_max) {
+                instance_destroy();
+                effect_create_above(ef_explosion, x, y, 1, c_white);
+            }
+        }
     }
 }

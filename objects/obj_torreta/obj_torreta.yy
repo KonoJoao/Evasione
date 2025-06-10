@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_caixa_disparadora",
+  "%Name":"obj_torreta",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_caixa_disparadora",
+  "name":"obj_torreta",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"atirador",
+    "path":"folders/Objetos/atirador.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_atirador",
+    "path":"sprites/spr_atirador/spr_atirador.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,13 +1,16 @@
-event_inherited()
+activate = function() {
+    if (obj_porta.sprite_index == spr_porta_aberta) {
+        // Porta fechada: muda sprite e desativa física dinâmica (fica estática)
+        obj_porta.sprite_index = spr_porta_fechada;
+        sprite_index = spr_alavanca_inicial;
 
-activate = function(){
-	if(obj_porta.sprite_index == spr_porta_aberta){
-		obj_porta.sprite_index = spr_porta_fechada
-		sprite_index = spr_alavanca_inicial
+        obj_porta.physics_dynamic = false;  // desativa movimento físico
+    } else {
+        // Porta aberta: muda sprite e ativa física dinâmica
+        audio_play_sound(snd_porta_abrindo, 0, false);
+        obj_porta.sprite_index = spr_porta_aberta;
+        sprite_index = spr_alavanca_final;
 
-	} else{
-		audio_play_sound(snd_porta_abrindo, 0, false)
-		obj_porta.sprite_index = spr_porta_aberta
-		sprite_index = spr_alavanca_final
-	}
+        obj_porta.physics_dynamic = true;   // ativa física dinâmica, pode ser movida
+    }
 }
