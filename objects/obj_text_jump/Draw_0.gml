@@ -1,3 +1,4 @@
+
 // Draw Event
 draw_set_color(cor); // Define a cor
 draw_set_font(fonte); // Define a fonte (se não for -1)
