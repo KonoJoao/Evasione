@@ -23,7 +23,7 @@
   ],
   "name":"spr_esgoto_quebrado",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"interativo",
     "path":"folders/Sprites/level/interativo.yy",
@@ -78,7 +78,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":42,
-    "yorigin":42,
+    "yorigin":84,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
