@@ -2,7 +2,7 @@ draw_set_font(ft_timer)
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 
-if(minutos > 1)
+if(minutos >= 1)
 	draw_set_colour(c_white)
 else
 	draw_set_colour(c_red)

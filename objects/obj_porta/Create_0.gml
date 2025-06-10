@@ -1,0 +1,1 @@
+mask_index = spr_porta_fechada;
