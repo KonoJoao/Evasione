@@ -1,0 +1,1 @@
+flag_timer_ativo=false

@@ -15,6 +15,6 @@ minutos = minutos -1
 if!(segundos == 0 && minutos == 0 && milisegundos == 0){
 	alarm[0] = 6
 } else {
-	game_end()	
+	room_goto(rm_game_over)
 }
 }
