@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.2159864,
+  "duration":0.49387756,
   "name":"snd_passo_guard",
   "parent":{
     "name":"Sons",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_passo_guard.mp3",
+  "soundFile":"snd_passo_guard.wav",
   "type":0,
-  "volume":0.29,
+  "volume":0.12,
 }
