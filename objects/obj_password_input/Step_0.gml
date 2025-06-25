@@ -31,8 +31,8 @@ if (input_active) {
             feedback_message = "ACESSO LIBERADO!";
             feedback_timer = 60;
             input_active = false;
-            
             alarm[0] = 90;
+			room_goto(rm_game_success)
         } else {
             feedback_message = "SENHA INCORRETA!";
             feedback_timer = 120;

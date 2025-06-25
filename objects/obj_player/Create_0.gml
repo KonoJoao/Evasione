@@ -2,8 +2,8 @@
 velh = 0;
 velv = 0;
 vel = 5;
-vel_jump = 8;
-grav = 0.2;
+vel_jump = 9;
+grav = 0.25;
 grav_original = grav;
 
 // Estados
