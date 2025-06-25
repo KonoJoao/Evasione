@@ -124,6 +124,7 @@
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_chave","path":"sprites/spr_chave/spr_chave.yy",},},
     {"id":{"name":"spr_cut_failure","path":"sprites/spr_cut_failure/spr_cut_failure.yy",},},
+    {"id":{"name":"spr_cut_success","path":"sprites/spr_cut_success/spr_cut_success.yy",},},
     {"id":{"name":"spr_escada_pedra","path":"sprites/spr_escada_pedra/spr_escada_pedra.yy",},},
     {"id":{"name":"spr_escada","path":"sprites/spr_escada/spr_escada.yy",},},
     {"id":{"name":"spr_esgoto_quebrado","path":"sprites/spr_esgoto_quebrado/spr_esgoto_quebrado.yy",},},
