@@ -120,18 +120,30 @@ if (!is_dead && !password_input_active) {
 
     // Interação com portão
     if (keyboard_check_pressed(inputs.enter)) {
-        var porta = instance_place(x, y, obj_portao);
-        if (porta != noone && has_key) {
-            if (!instance_exists(obj_password_input)) {
-                instance_create_layer(0, 0, "Player", obj_password_input);
+        // Verificar se o inventário está visível - se estiver, não processar interação com portão
+        var inventory_visible = false;
+        if (instance_exists(obj_inventory)) {
+            var inv = instance_find(obj_inventory, 0);
+            if (inv != noone && inv.inventory_visible) {
+                inventory_visible = true;
             }
-            var password_obj = instance_find(obj_password_input, 0);
-            if (password_obj != noone) {
-                password_obj.input_active = true;
-                password_obj.password_visible = true;
-                password_obj.password_input = "";
-                password_obj.feedback_message = "";
-                password_obj.feedback_timer = 0;
+        }
+        
+        // Só processar interação com portão se inventário não estiver visível
+        if (!inventory_visible) {
+            var porta = instance_place(x, y, obj_portao);
+            if (porta != noone && has_key) {
+                if (!instance_exists(obj_password_input)) {
+                    instance_create_layer(0, 0, "Player", obj_password_input);
+                }
+                var password_obj = instance_find(obj_password_input, 0);
+                if (password_obj != noone) {
+                    password_obj.input_active = true;
+                    password_obj.password_visible = true;
+                    password_obj.password_input = "";
+                    password_obj.feedback_message = "";
+                    password_obj.feedback_timer = 0;
+                }
             }
         }
     }
